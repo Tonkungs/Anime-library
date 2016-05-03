@@ -1,0 +1,599 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="th">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Animery</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+    <script src="js/animery.js"></script> 
+  </head>
+  <body itemscope itemtype="http://schema.org/WebPage ">  <!--ตรง inverse กำหนดสี เป็นสีดำ -->
+    
+      <div class="header" >
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Animery</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Email Or ID" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <a type="submit" class="btn btn-success">Login</a>
+            <a type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Register</a>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+      </div>
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">          
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times</button>
+                    <h3 id="myModalLabel">Register</h3>
+                  </div>
+                  <div class="modal-body">
+                    <form class="form-horizontal" role="form">
+                      <div class="form-group">
+                        <label for="inputid" class="col-sm-3 control-label">Id</label>
+                        <div class="col-sm-6">
+                          <input type="text" class="form-control" id="inputid" placeholder="Id">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputPassword" class="col-sm-3 control-label">Password</label>
+                        <div class="col-sm-6">
+                          <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        </div>
+                      </div> 
+                      <div class="form-group">
+                        <label for="inputPasswordagain" class="col-sm-3 control-label">Password Again</label>
+                        <div class="col-sm-6">
+                          <input type="password" class="form-control" id="inputPasswordagain" placeholder="Password Again">
+                        </div>
+                      </div> 
+                      <div class="form-group">
+                        <label for="inputEmail" class="col-sm-3 control-label">Email</label>
+                        <div class="col-sm-6">
+                          <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="Terms of Use" class="col-sm-3 control-label">Terms of Use</label>
+                        <div class="col-sm-6">
+                          <textarea class="form-control" readonly="readonly">ข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลงข้อตกลง</textarea>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-6">
+                          <div class="checkbox">
+                            <label>
+                              <input type="checkbox"> Accept
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">Close</button>
+                    <button class="btn btn-primary" role="link" type="submit" name="op" value="www.google.com">Register</button>
+                    <a href="www.google.com" class="btn btn-primary" type="submit" >bbb</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        <!-- Modal -->
+      <div class="jumbotron"> 
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="col-md-12">
+                <span class="titlelead">Sword Art Online II</span>
+              </div>
+              <div class="col-md-12 col-sm-8 col-xs-7 ">
+                <span class="leads">A year has passed since the SAO incident. Kirito receives a strange request from Seijiro Kikuoka of the Ministry of Internal Affairs and Communications, Virtual Division. He has been researching a strange phenomenon, Death Gun, that suddenly occurred in the VRMMO Gun Gale Online (GGO). If a player is shot by the avatar who has the black gun, they will die in real life as well. Kirito is unable to ...</span>
+              </div>
+              <div class="col-md-7 col-sm-7 col-xs-7 titlelead">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe id="animeSmallThumbnail7" class="animeSmallThumbnail" frameborder="0" allowfullscreen="1" title="YouTube video player" width="240" height="135" src="https://www.youtube.com/embed/xaxHMzVosl4?autoplay=1&amp;autohide=1&amp;showinfo=0&amp;modestbranding=1&amp;cc_load_policy=1&amp;rel=0&amp;controls=1&amp;enablejsapi=1&amp;origin=http%3A%2F%2Fwww.daisuki.net" __idm_id__="993284"></iframe>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-3 titlelead">
+                <a href="#" type="button" class="btn btn-info viewtitle">View</a>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="#">Animery</a></li>
+        </ol>
+      </div>
+      <div id="maincontener" class="container">
+<!--col-md-10 คือมีความกว้างเท่าไร  col-md-offset-1 ห่างจากด้านซ้ายเท่าไร-->   
+        <div id="trendindex" class="indx-bdr-b">
+            <div class="row topic-item">
+              <div class="col-lg-12">
+                <span class="titlehead">Trending Now</span>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                <img src="holder.js/155x87" class="img-rounded" alt="Anime Name">
+                <span class="title">Anime Name</span>
+                <span class="time">
+                  <label for="Icon" class="text-muted">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 555 view
+                  </label>
+                </span>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                <img src="holder.js/155x87" class="img-rounded" alt="Anime Name">
+                <span class="title">Anime Name</span>
+                <span class="time">
+                  <label for="Icon" class="text-muted">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 555 view
+                  </label>
+                </span>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                <img src="holder.js/155x87" class="img-rounded" alt="Anime Name">
+                <span class="title">Anime Name</span>
+                <span class="time">
+                  <label for="Icon" class="text-muted">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 555 view
+                  </label>
+                </span>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                <img src="holder.js/155x87" class="img-rounded" alt="Anime Name">
+                <span class="title">Anime Name</span>
+                <span class="time">
+                  <label for="Icon" class="text-muted">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 555 view
+                  </label>
+                </span>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                <img src="holder.js/155x87" class="img-rounded" alt="Anime Name">
+                <span class="title">Anime Name</span>
+                <span class="time">
+                  <label for="Icon" class="text-muted">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 555 view
+                  </label>
+                </span>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                <img src="holder.js/155x87" class="img-rounded" alt="Anime Name">
+                <span class="title">Anime Name</span>
+                <span class="time">
+                  <label for="Icon" class="text-muted">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 555 view
+                  </label>
+                </span>
+              </div>
+          </div>
+        </div>
+        <div id="lastindex" class="indx-bdr-b ">
+            <div class="row topic-item">
+              <div class="col-lg-12">
+                <span class="titlehead">New Releases</span>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                <img src="holder.js/155x87" class="img-rounded" alt="Anime Name">
+                <span class="title">Anime Name</span>
+                <span class="time">
+                  <label for="Icon" class="text-muted">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 555 view
+                  </label>
+                </span>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                <img src="holder.js/155x87" class="img-rounded" alt="Anime Name">
+                <span class="title">Anime Name</span>
+                <span class="time">
+                  <label for="Icon" class="text-muted">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 555 view
+                  </label>
+                </span>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                <img src="holder.js/155x87" class="img-rounded" alt="Anime Name">
+                <span class="title">Anime Name</span>
+                <span class="time">
+                  <label for="Icon" class="text-muted">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 555 view
+                  </label>
+                </span>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                <img src="holder.js/155x87" class="img-rounded" alt="Anime Name">
+                <span class="title">Anime Name</span>
+                <span class="time">
+                  <label for="Icon" class="text-muted">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 555 view
+                  </label>
+                </span>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                <img src="holder.js/155x87" class="img-rounded" alt="Anime Name">
+                <span class="title">Anime Name</span>
+                <span class="time">
+                  <label for="Icon" class="text-muted">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 555 view
+                  </label>
+                </span>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                <img src="holder.js/155x87" class="img-rounded" alt="Anime Name">
+                <span class="title">Anime Name</span>
+                <span class="time">
+                  <label for="Icon" class="text-muted">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 555 view
+                  </label>
+                </span>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                <img src="holder.js/155x87" class="img-rounded" alt="Anime Name">
+                <span class="title">Anime Name</span>
+                <span class="time">
+                  <label for="Icon" class="text-muted">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 555 view
+                  </label>
+                </span>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                <img src="holder.js/155x87" class="img-rounded" alt="Anime Name">
+                <span class="title">Anime Name</span>
+                <span class="time">
+                  <label for="Icon" class="text-muted">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 555 view
+                  </label>
+                </span>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                <img src="holder.js/155x87" class="img-rounded" alt="Anime Name">
+                <span class="title">Anime Name</span>
+                <span class="time">
+                  <label for="Icon" class="text-muted">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 555 view
+                  </label>
+                </span>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                <img src="holder.js/155x87" class="img-rounded" alt="Anime Name">
+                <span class="title">Anime Name</span>
+                <span class="time">
+                  <label for="Icon" class="text-muted">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 555 view
+                  </label>
+                </span>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                <img src="holder.js/155x87" class="img-rounded" alt="Anime Name">
+                <span class="title">Anime Name</span>
+                <span class="time">
+                  <label for="Icon" class="text-muted">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 555 view
+                  </label>
+                </span>
+              </div>
+              <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+                <img src="holder.js/155x87" class="img-rounded" alt="Anime Name">
+                <span class="title">Anime Name</span>
+                <span class="time">
+                  <label for="Icon" class="text-muted">
+                    <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 555 view
+                  </label>
+                </span>
+              </div>
+          </div>
+        </div>
+        <div id="Articlesandcomment " class="indx-bdr-b">
+          <div class="row topic-item">
+            <div class="col-lg-8 indx-bdr-r">
+              <div class="row indx-bdr-b">
+                <div class="col-md-6 col-sm-6">
+                  <div id="articlesIndex" class="index-block">
+                    <div class="row ">
+                       <div class="col-lg-12">
+                        <span class="titlehead">Recent Articles</span>
+                       </div>
+                    </div>
+                    <div class="row articles">
+                      <div class="col-md-12 ">
+                        <div class="article-item">
+                          <div class="summary">
+                            <a href="#" class="article-title title">Test Articles!</a>
+                            <div class="article-meta">15 Dec 2014 &nbsp;&nbsp;By&nbsp;&nbsp; Tonkung</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 ">
+                        <div class="topic-item">
+                          <div class="summary">
+                            <a href="#" class="article-title title">Test Articles!</a>
+                            <div class="article-meta">15 Dec 2014 &nbsp;&nbsp;By&nbsp;&nbsp; Tonkung</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 ">
+                        <div class="article-item">
+                          <div class="summary">
+                            <a href="#" class="article-title title">Test Articles!</a>
+                            <div class="article-meta">15 Dec 2014 &nbsp;&nbsp;By&nbsp;&nbsp; Tonkung</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 ">
+                        <div class="article-item">
+                          <div class="summary">
+                            <a href="#" class="article-title title">Test Articles!</a>
+                            <div class="article-meta">15 Dec 2014 &nbsp;&nbsp;By&nbsp;&nbsp; Tonkung</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 ">
+                        <div class="article-item">
+                          <div class="summary">
+                            <a href="#" class="article-title title">Test Articles!</a>
+                            <div class="article-meta">15 Dec 2014 &nbsp;&nbsp;By&nbsp;&nbsp; Tonkung</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6 indx-bdr-l">
+                  <div id="articlesIndex" class="index-block">
+                    <div class="row">
+                       <div class="col-lg-12">
+                        <span class="titlehead">Recently Commented Series</span>
+                       </div>
+                    </div>
+                    <div class="row articles">
+                      <div class="col-md-12 ">
+                        <div class="comment-item">
+                          <div class="summary">
+                            <a href="#" class="article-title title">Test Articles!</a>
+                            <div class="article-meta">Anime Name &nbsp;&nbsp;By&nbsp;&nbsp;Tonkung</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 ">
+                        <div class="comment-item">
+                          <div class="summary">
+                            <a href="#" class="article-title title">Test Articles!</a>
+                            <div class="article-meta">Anime Name &nbsp;&nbsp;By&nbsp;&nbsp;Tonkung</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 ">
+                        <div class="comment-item">
+                          <div class="summary">
+                            <a href="#" class="article-title title">Test Articles!</a>
+                            <div class="article-meta">Anime Name &nbsp;&nbsp;By&nbsp;&nbsp;Tonkung</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 ">
+                        <div class="comment-item">
+                          <div class="summary">
+                            <a href="#" class="article-title title">Test Articles!</a>
+                            <div class="article-meta">Anime Name &nbsp;&nbsp;By&nbsp;&nbsp;Tonkung</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 ">
+                        <div class="comment-item">
+                          <div class="summary">
+                            <a href="#" class="article-title title">Test Articles!</a>
+                            <div class="article-meta">Anime Name &nbsp;&nbsp;By&nbsp;&nbsp;Tonkung</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12 ">
+                        <div class="comment-item">
+                          <div class="summary">
+                            <a href="#" class="article-title title">Test Articles!</a>
+                            <div class="article-meta">Anime Name &nbsp;&nbsp;By&nbsp;&nbsp;Tonkung</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div id="OngoingShows" class="index-block">
+              <div class="row topic-item">
+                  <div class="col-lg-12">
+                    <div class="row">
+                      <span class="titlehead">Suggest Anime For You</span>
+                    </div> 
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="topic-item">
+                          <div class="media">
+                            <a class="media-left" href="#">
+                              <img src="holder.js/75x95" class="img-rounded" alt="Anime Name">
+                            </a>
+                            <a class="media-body" href="#">
+                              <span class="title">Anime Name</span>
+                              <span class="article-meta">Anime Story</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="topic-item">
+                          <div class="media">
+                            <a class="media-left" href="#">
+                              <img src="holder.js/75x95" class="img-rounded" alt="Anime Name">
+                            </a>
+                            <a class="media-body" href="#">
+                              <span class="title">Anime Name</span>
+                              <span class="article-meta">Anime Story</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="topic-item">
+                          <div class="media">
+                            <a class="media-left" href="#">
+                              <img src="holder.js/75x95" class="img-rounded" alt="Anime Name">
+                            </a>
+                            <a class="media-body" href="#">
+                              <span class="title">Anime Name</span>
+                              <span class="article-meta">Anime Story</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="topic-item">
+                          <div class="media">
+                            <a class="media-left" href="#">
+                              <img src="holder.js/75x95" class="img-rounded" alt="Anime Name">
+                            </a>
+                            <a class="media-body" href="#">
+                              <span class="title">Anime Name</span>
+                              <span class="article-meta">Anime Story</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>  
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 indx-bdr-r fb-index ">
+            <br />
+            <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FAnimery%2F1538501036384003&amp;width=350&amp;height=558&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=true&amp;show_border=true&amp;appId=114197775307344" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:350px; height:558px;" allowTransparency="true"></iframe>
+          </div>
+          </div>
+        </div>
+        <div id="ongoing" class="indx-bdr-b">
+          <div class="row ">
+            <div class="col-lg-12 index-widget">
+              <div class="row topic-item">
+                <div class="col-lg-12 index-widget">
+                  <span class="titlehead">Ongoing Shows</span>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-lg-12 index-widget ">
+                  <div class="ongoing-link col-lg-3 col-md-4 col-xs-6 ">
+                    <a class="title" href="#">Anime Name</a>
+                  </div>
+                  <div class="ongoing-link col-lg-3 col-md-4 col-xs-6 ">
+                    <a class="title" href="#">Anime Name</a>
+                  </div>
+                  <div class="ongoing-link col-lg-3 col-md-4 col-xs-6 ">
+                    <a class="title" href="#">Anime Name</a>
+                  </div>
+                  <div class="ongoing-link col-lg-3 col-md-4 col-xs-6 ">
+                    <a class="title" href="#">Anime Name</a>
+                  </div>
+                  <div class="ongoing-link col-lg-3 col-md-4 col-xs-6 ">
+                    <a class="title" href="#">Anime Name</a>
+                  </div>
+                  <div class="ongoing-link col-lg-3 col-md-4 col-xs-6 ">
+                    <a class="title" href="#">Anime Name</a>
+                  </div>
+                  <div class="ongoing-link col-lg-3 col-md-4 col-xs-6 ">
+                    <a class="title" href="#">Anime Name</a>
+                  </div>
+                  <div class="ongoing-link col-lg-3 col-md-4 col-xs-6 ">
+                    <a class="title" href="#">Anime Name</a>
+                  </div>
+                  <div class="ongoing-link col-lg-3 col-md-4 col-xs-6 ">
+                    <a class="title" href="#">Anime Name</a>
+                  </div>
+                  <div class="ongoing-link col-lg-3 col-md-4 col-xs-6 ">
+                    <a class="title" href="#">Anime Name</a>
+                  </div>
+                  <div class="ongoing-link col-lg-3 col-md-4 col-xs-6 ">
+                    <a class="title" href="#">Anime Name</a>
+                  </div>
+                  <div class="ongoing-link col-lg-3 col-md-4 col-xs-6 ">
+                    <a class="title" href="#">Anime Name</a>
+                  </div>
+                  <div class="ongoing-link col-lg-3 col-md-4 col-xs-6 ">
+                    <a class="title" href="#">Anime Name</a>
+                  </div>
+                  <div class="ongoing-link col-lg-3 col-md-4 col-xs-6 ">
+                    <a class="title" href="#">Anime Name</a>
+                  </div>
+                  <div class="ongoing-link col-lg-3 col-md-4 col-xs-6 ">
+                    <a class="title" href="#">Anime Name</a>
+                  </div>
+                  <div class="ongoing-link col-lg-3 col-md-4 col-xs-6 ">
+                    <a class="title" href="#">Anime Name</a>
+                  </div>
+                  <div class="ongoing-link col-lg-3 col-md-4 col-xs-6 ">
+                    <a class="title" href="#">Anime Name</a>
+                  </div>
+                  <div class="ongoing-link col-lg-3 col-md-4 col-xs-6 ">
+                    <a class="title" href="#">Anime Name</a>
+                  </div>
+                  <div class="ongoing-link col-lg-3 col-md-4 col-xs-6 ">
+                    <a class="title" href="#">Anime Name</a>
+                  </div>
+                  <div class="ongoing-link col-lg-3 col-md-4 col-xs-6 ">
+                    <a class="title" href="#">Anime Name</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+        </div>
+      </div>
+    <footer id="footerup" class="footer">
+      <div class="container">
+        <div class="row">
+        <div class="col-md-12 col-sm-3 block">
+          <span class="headingfoot"><p>&nbsp;Home&nbsp;&nbsp;&nbsp;About Us&nbsp;&nbsp;&nbsp;Terms of Use&nbsp;&nbsp;&nbsp;Privacy Policy&nbsp;&nbsp;&nbsp;Contact Us&nbsp;&nbsp;&nbsp;Help </p></span>
+        </div>
+      </div>
+      </div>
+    </footer> 
+    <footer id="footerdown" class="footer">
+          <p class="text-muted"> © 2014 Copyright Animery.com</p>
+    </footer> 
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.js"></script>
+  </body>
+</html>
