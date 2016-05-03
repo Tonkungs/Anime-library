@@ -1,0 +1,239 @@
+@charset "utf-8";
+body  {
+    
+    background-color: #F2F2F2;
+}
+.navbar {
+  background: rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+}
+.navbar li { color: #000 } 
+.jumbotron {
+  width:100%;
+  height:500px;
+  background-image:url('../img/saoll.jpg');
+  background-size:cover;
+}
+.maincontener-admin{
+  margin-top: 70px;
+}
+.jumbotrons {
+  width:100%;
+  height:50px;
+  background-size:cover;
+}
+.titlelead{
+  padding-top:20px;
+  font-size: 3.5rem;
+  color: #FFF;
+  font-family: 'Roboto', serif;
+}
+.leads{
+  font-size: 1.3rem;
+  color: #FFF;
+  font-family: 'Roboto', serif;
+}
+.viewtitle{
+  font-size: 3.5rem;
+  color: black;
+  font-family: 'Roboto', serif;
+}
+div#maincontener.container {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 30px black;
+    padding:0 15px 0 15px;
+}
+h4.heading {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: .5em;
+}
+footer#footerup.footer {
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background-color: #25292B;
+  text-align: center;
+  padding-top: 2em;
+  margin-top: 1em;
+}
+footer#footerdown.footer {
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #070808;
+  background-color: black;
+  text-align: center;
+}
+.title{
+  display: block;
+  height: 20px;
+  overflow: hidden;
+  font-size: 1.3rem;
+  color: #DF013A;
+  font-family: 'Roboto', serif;
+}
+/* anmimeinfo สีเแดง*/ 
+.animename{
+  padding-top:20px;
+  font-size: 3rem;
+  font-family: 'Roboto', serif;
+}
+.imagean{
+  padding-top: 20px;
+  margin-left: 35px;
+}
+.detail {
+  display: block;
+  padding: 4px 0;
+  min-height: 20px;
+  }
+.detail-label {
+  min-width: 85px;
+  float: left;
+  font-size: 1.2rem;
+  color: #999;
+}
+.detail-content {
+  margin-left: 85px;
+}
+.comment-mem{
+  display: block;
+  font-size: 1.3rem;
+  font-family: 'Roboto', serif;
+}
+a.genre {
+  display: inline-block;
+}
+.label {
+  display: inline-block;
+}
+.comment-meta{
+  float: right;
+  font-size:1.2rem;
+  font-family: 'Roboto', serif;
+  color:#999;
+}
+.btnfont{
+  margin-top:20px;
+  color:#FFF;
+  font-family: 'Roboto', serif;
+}
+/**/
+/* Articlesinfo */
+.articles-topic{
+  padding-top:25px;
+  font-size: 3rem;
+  font-family: 'Roboto', serif;
+}
+.article-a{
+  font-family: 'Roboto', serif;
+  font-size: 1.5rem;
+  word-wrap:break-word;
+  
+}
+.article-meta{
+  float: right;
+  font-size:2rem;
+  font-family: 'Roboto', serif;
+  color:#999;
+
+}
+/* Articlesinfo End*/
+.menu-admin{
+  font-size:2rem;
+  font-family: 'Roboto', serif;
+} 
+/* End Articlesinfo End*/
+/* Table End*/
+.table-admin{
+  font-family: 'Roboto', serif;
+  empty-cells: 1px;
+} 
+.table-1{
+  width: 10%;
+} 
+.table-3{
+  width: 30%;
+} 
+/* End Table */
+.article-meta{
+  float: right;
+  font-size:2rem;
+  font-family: 'Roboto', serif;
+  color:#999;
+
+}
+/* End  Menu admin*/
+a:visited {color: #333333} /* visited link สีเแดง*/ 
+a:hover {color: #FA58AC} /* mouse over link สีเชมพู */ 
+.time{
+  display: inline-block;
+  float: right;
+  color: #aaa;
+  font-size: 1.2rem;
+  font-family: 'Roboto', serif;
+}
+.indx-bdr-r{border-right:1px solid #e2e2e2;}
+.indx-bdr-b {border-bottom: 1px solid #e2e2e2;}/*แนวนอน */ 
+.indx-bdr-l{border-left:1px solid #e2e2e2;}/*แนวตั้ง */ 
+.titlehead{
+  font-family: 'Roboto', serif;
+  font-size: 2rem;
+}
+.index-block .row {
+margin-left: -5px;
+margin-right: -5px;
+}
+.index-widget .widget-heading .more-btn{
+  display:none;
+}
+.block{
+  padding:15px 20px;
+}
+.ongoing-link{
+  padding-top:5px;
+  padding-bottom:5px;
+  border-bottom:1px dotted #f0f0f0;
+}
+.topic-item{
+  padding:10px 0;
+}
+.article-item{
+  padding:10px 0;
+  border-bottom:1px dashed #f0f0f0;
+}
+.article-title{
+  font-size:1.4rem;
+  margin-bottom:5px;
+}
+.article-meta{
+  font-size:1.2rem;
+  color:#999;
+}
+.comment-item{
+  padding:5px 0;
+  border-bottom:1px dashed #f0f0f0;
+  vertical-align:middle;
+}
+.fb-index{
+  display:table-cell;
+  padding:10px 15px;
+}
+.headingfoot{
+  font-size:1.2rem;
+  color:#fff;
+  text-transform: uppercase;
+  margin-bottom: .2em;
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+.footer-strity {
+  position: absolute;
+}
