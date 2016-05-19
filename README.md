@@ -1,5 +1,11 @@
 # Anime-library
 เว็บที่ทำเป็นโปรเจครายวิชาพัฒนาเว็บเพจ เมื่อปี 2014
+
+# Example Page
+[คลิกเพื่อดูทุกหน้า]: http://imgur.com/gallery/Re3M4/new
+
+![alt text](http://i.imgur.com/wGbuHuU.png "Index Page")
+
 # สิ่งของที่ใช้งาน
 Bootstrap Framework(http://getbootstrap.com/)
 # ข้อควรระวัง
